@@ -166,6 +166,9 @@ class Tests(unittest.TestCase):
     def test_with(self):
         self._run_test('with.jinja', foo='foo', bar='bar')
 
+    def test_with_include(self):
+        self._run_test('with_include.jinja')
+
     def test_set(self):
         self._run_test('set.jinja')
 
